@@ -162,7 +162,7 @@
     </div>
     <div class="section">
       <h3>About Me</h3>
-      <p>I'm Samuel Precious, a passionate data analyst who transforms complex data into clear, actionable insights. Specializing in Excel and Power BI, I create dynamic dashboards and reports that empower businesses to make smarter decisions. From uncovering sales trends to optimizing operations, my work drives results and tells compelling data stories.</p>
+      <p>I'm Samuel Precious, a passionate data analyst who transforms complex data into clear, actionable insights. I create dynamic dashboards and reports that empower businesses to make smarter decisions. From uncovering sales trends to optimizing operations, my work drives results and tells compelling data stories.</p>
     </div>
     <div class="section">
       <h3>Skills</h3>
@@ -170,7 +170,7 @@
         <div class="skill">
           <i class="fas fa-chart-bar"></i>
           <h4>Data Visualization</h4>
-          <p>Crafting interactive dashboards in Power BI and Excel to bring data to life.</p>
+          <p>Crafting interactive dashboards that bring data to life.</p>
         </div>
         <div class="skill">
           <i class="fas fa-calculator"></i>
@@ -180,7 +180,7 @@
         <div class="skill">
           <i class="fas fa-filter"></i>
           <h4>Data Cleaning</h4>
-          <p>Preparing accurate datasets using Excel and Power BI for reliable results.</p>
+          <p>Preparing accurate datasets using Power Query for reliable results.</p>
         </div>
         <div class="skill">
           <i class="fas fa-analytics"></i>
