@@ -189,7 +189,7 @@
     <div class="hero">
       <div class="hero-text">
         <h1>Hello I'm Samuel Precious</h1>
-        <h2>Your Data Analyst</h2>
+        <h2 id="your-data-analyst">Your Data Analyst</h2>
         <p>As a data analyst, I specialize in transforming complex data into clear, actionable insights using Excel and Power BI. My work solves challenges like identifying sales trends, optimizing workflows, and uncovering customer insights. By understanding data’s purpose, I deliver solutions that empower businesses to make informed decisions and drive growth.</p>
       </div>
       <div class="hero-image">
