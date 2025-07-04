@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samuel Precious - Data Analyst Portfolio</title>
-  <link rel="stylesheet" href="[invalid url, do not cite]
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #1A1A1A;
-      color: #FFFFFF;
+      background: #1A1A1A;
+      color: #ecf0f1;
       font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
     }
     .container {
-      max-width: 1200px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 40px 20px;
     }
@@ -26,73 +26,50 @@
       gap: 40px;
       padding: 60px 0;
       animation: fadeIn 1s ease-in;
+      text-align: center;
     }
     .hero-left {
       flex: 1;
-      min-width: 300px;
-      text-align: left;
+      min-width: 200px;
     }
     .hero-right {
       flex: 1;
-      min-width: 300px;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      min-width: 200px;
     }
     .profile-img {
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
       border-radius: 50%;
+      border: 5px solid #00C4B4;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       object-fit: cover;
-      z-index: 2;
     }
-    .circle {
-      width: 400px;
-      height: 400px;
-      border-radius: 50%;
-      background: radial-gradient(circle, #00D7A7, #00FFBF);
-      position: absolute;
-      z-index: 1;
+    .profile-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
     }
-    h1 {
-      font-size: 48px;
-      font-weight: bold;
+    .hero h1 {
+      color: #FFFFFF;
+      font-size: 3em;
       margin: 0;
-      line-height: 1.2;
+      font-weight: 700;
+      border-bottom: none;
     }
-    h1 .small {
-      font-size: 24px;
-      font-weight: normal;
-      display: block;
-    }
-    h2 {
-      font-size: 36px;
-      color: #00D7A7;
+    .hero h2 {
+      color: #00C4B4;
+      font-size: 1.8em;
       margin: 10px 0;
-      font-weight: normal;
-    }
-    .contact-btn {
-      background-color: #FFC107;
-      color: #000;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-top: 20px;
-      transition: background-color 0.3s ease;
-    }
-    .contact-btn:hover {
-      background-color: #FFB300;
+      font-weight: 400;
+      border-bottom: none;
     }
     .section {
       padding: 40px 0;
     }
     h3 {
-      color: #3498db;
+      color: #00C4B4;
       font-size: 1.8em;
-      border-bottom: 2px solid #3498db;
+      border-bottom: 2px solid #00C4B4;
       padding-bottom: 10px;
       margin-bottom: 20px;
     }
@@ -114,11 +91,11 @@
     }
     .skill i {
       font-size: 48px;
-      color: #3498db;
+      color: #00C4B4;
       margin-bottom: 10px;
     }
     .skill h4 {
-      color: #3498db;
+      color: #00C4B4;
       font-size: 1.2em;
       margin-bottom: 10px;
     }
@@ -133,12 +110,12 @@
       margin-bottom: 20px;
     }
     .project h4 {
-      color: #3498db;
+      color: #00C4B4;
       font-size: 1.5em;
       margin-bottom: 15px;
     }
     a {
-      color: #3498db;
+      color: #00C4B4;
       text-decoration: none;
     }
     a:hover {
@@ -166,18 +143,14 @@
         width: 200px;
         height: 200px;
       }
-      .circle {
-        width: 300px;
-        height: 300px;
+      .hero h1 {
+        font-size: 2.5em;
       }
-      h1 {
-        font-size: 36px;
+      .hero h2 {
+        font-size: 1.5em;
       }
-      h1 .small {
-        font-size: 18px;
-      }
-      h2 {
-        font-size: 24px;
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
     @media (max-width: 480px) {
@@ -185,28 +158,14 @@
         width: 150px;
         height: 150px;
       }
-      .circle {
-        width: 250px;
-        height: 250px;
+      .hero h1 {
+        font-size: 2em;
       }
-      h1 {
-        font-size: 28px;
+      .hero h2 {
+        font-size: 1.2em;
       }
-      h1 .small {
-        font-size: 14px;
-      }
-      h2 {
-        font-size: 20px;
-      }
-    }
-    @media (max-width: 1080px) {
       .skills-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-    @media (max-width: 640px) {
-      .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
       }
     }
     @keyframes fadeIn {
@@ -219,14 +178,11 @@
   <div class="container">
     <div class="hero">
       <div class="hero-left">
-        <h1 class="small">Hello</h1>
-        <h1>I'm Samuel Precious</h1>
-        <h2>Your Data Analyst</h2>
-        <button class="contact-btn">Contact Me</button>
+        <img src="images/profile.jpg" alt="Samuel Precious" class="profile-img" <!-- CLUE: Replace this image path with your uploaded file path, e.g., images/samuel-profile.png -->>
       </div>
       <div class="hero-right">
-        <div class="circle"></div>
-        <img src="images/profile.jpg" alt="Samuel Precious" class="profile-img" <!-- CLUE: Replace this image path with your uploaded file path -->>
+        <h1>Hello I'm Samuel Precious</h1>
+        <h2>Your Data Analyst</h2>
       </div>
     </div>
     <div class="section">
