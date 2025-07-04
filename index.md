@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -126,7 +127,7 @@
       text-decoration: none;
     }
     a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
     iframe {
       width: 100%;
@@ -193,10 +194,6 @@
         <img src="images/profile.jpg" alt="Samuel Precious" class="profile-img">
         <!-- If your image has a different name, update the src attribute, e.g., src="images/samuel-profile.png" -->
       </div>
-    </div>
-    <div class="section">
-      <h3>About Me</h3>
-      <p>I'm Samuel Precious, a passionate data analyst who transforms complex data into clear, actionable insights. Specializing in Excel and Power BI, I create dynamic dashboards and reports that empower businesses to make smarter decisions. From uncovering sales trends to optimizing operations, my work drives results and tells compelling data stories.</p>
     </div>
     <div class="section">
       <h3>Skills</h3>
