@@ -1,9 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samuel Precious - Data Analyst Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     body {
       background: linear-gradient(to right, #1a1a1a, #2c3e50);
@@ -21,14 +21,15 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 30px;
-      padding: 50px 0;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 0;
       animation: fadeIn 1s ease-in;
+      text-align: center;
     }
     .hero-left {
       flex: 1;
       min-width: 250px;
-      text-align: center;
     }
     .hero-right {
       flex: 1;
@@ -48,13 +49,15 @@
     }
     h1 {
       color: #3498db;
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      font-size: 3em;
+      margin: 0;
+      font-weight: bold;
     }
-    .hero-right h2 {
+    h2 {
       color: #ecf0f1;
       font-size: 1.8em;
-      margin-bottom: 20px;
+      margin: 10px 0;
+      font-weight: normal;
     }
     .section {
       padding: 40px 0;
@@ -142,7 +145,7 @@
       .hero-left, .hero-right {
         flex: 100%;
       }
-   0
+    }
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -162,7 +165,7 @@
     </div>
     <div class="section">
       <h3>About Me</h3>
-      <p>I'm Samuel Precious, a passionate data analyst who transforms complex data into clear, actionable insights. I create dynamic dashboards and reports that empower businesses to make smarter decisions. From uncovering sales trends to optimizing operations, my work drives results and tells compelling data stories.</p>
+      <p>I'm Samuel Precious, a passionate data analyst who transforms complex data into clear, actionable insights. Specializing in Excel and Power BI, I create dynamic dashboards and reports that empower businesses to make smarter decisions. From uncovering sales trends to optimizing operations, my work drives results and tells compelling data stories.</p>
     </div>
     <div class="section">
       <h3>Skills</h3>
@@ -170,7 +173,7 @@
         <div class="skill">
           <i class="fas fa-chart-bar"></i>
           <h4>Data Visualization</h4>
-          <p>Crafting interactive dashboards that bring data to life.</p>
+          <p>Crafting interactive dashboards in Power BI and Excel to bring data to life.</p>
         </div>
         <div class="skill">
           <i class="fas fa-calculator"></i>
@@ -180,7 +183,7 @@
         <div class="skill">
           <i class="fas fa-filter"></i>
           <h4>Data Cleaning</h4>
-          <p>Preparing accurate datasets using Power Query for reliable results.</p>
+          <p>Preparing accurate datasets using Excel and Power BI for reliable results.</p>
         </div>
         <div class="skill">
           <i class="fas fa-analytics"></i>
