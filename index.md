@@ -1,3 +1,4 @@
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -182,6 +183,9 @@
       from { opacity: 0; }
       to { opacity: 1; }
     }
+    .anchorjs-link {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
@@ -189,7 +193,7 @@
     <div class="hero">
       <div class="hero-text">
         <h1>Hello I'm Samuel Precious</h1>
-        <h2 id="your-data-analyst">Your Data Analyst</h2>
+        <h2>Your Data Analyst</h2>
         <p>As a data analyst, I specialize in transforming complex data into clear, actionable insights using Excel and Power BI. My work solves challenges like identifying sales trends, optimizing workflows, and uncovering customer insights. By understanding data’s purpose, I deliver solutions that empower businesses to make informed decisions and drive growth.</p>
       </div>
       <div class="hero-image">
@@ -215,7 +219,7 @@
           <h4>Data Cleaning</h4>
           <p>Preparing accurate datasets using Excel and Power BI for reliable results.</p>
         </div>
-      <div class="skill">
+        <div class="skill">
           <i class="fas fa-lightbulb"></i> <!-- Placeholder icon for Business Intelligence -->
           <h4>Business Intelligence</h4>
           <p>Building KPIs to track and boost business performance with actionable insights.</p>
