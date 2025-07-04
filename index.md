@@ -216,8 +216,8 @@
           <h4>Data Cleaning</h4>
           <p>Preparing accurate datasets using Excel and Power BI for reliable results.</p>
         </div>
-        <div class="skill">
-          <i class="fas fa-analytics"></i>
+      <div class="skill">
+          <i class="fas fa-lightbulb"></i> <!-- Placeholder icon for Business Intelligence -->
           <h4>Business Intelligence</h4>
           <p>Building KPIs to track and boost business performance with actionable insights.</p>
         </div>
