@@ -76,7 +76,7 @@
     }
     h3 {
       color: #00C4B4;
-      font-size: 3em;
+      font-size: 1.8em;
       border-bottom: 2px solid #00C4B4;
       padding-bottom: 10px;
       margin-bottom: 20px;
@@ -228,7 +228,7 @@
       </div>
     </div>
     <div class="section">
-      <h3>Projects</h3>
+      <h3>Portfolio</h3>
       <div class="project">
         <h4>Sales Trends Dashboard</h4>
         <p>Analyzed sales data from 2009-2012 to identify trends and forecast performance, helping optimize inventory.</p>
