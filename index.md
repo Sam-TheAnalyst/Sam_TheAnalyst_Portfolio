@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -184,7 +183,7 @@
         <h2>Your Data Analyst</h2>
       </div>
       <div class="hero-image">
-       <img src="images/profile.jpg" alt="Samuel Precious" class="profile-img"> <!-- CLUE: Replace this image path with your uploaded file path, e.g., images/samuel-profile.png -->>
+       <img src="images/profile.jpg" alt="Samuel Precious" class="profile-img" <!-- CLUE: Replace this image path with your uploaded file path, e.g., images/samuel-profile.png -->>
       </div>
     </div>
     <div class="section">
