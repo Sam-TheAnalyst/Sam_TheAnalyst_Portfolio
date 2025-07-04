@@ -16,14 +16,14 @@
     .container {
       max-width: 1000px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 30px 20px;
     }
     .hero {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 40px;
-      padding: 60px 0;
+      padding: 30px 0;
       animation: fadeIn 1s ease-in;
     }
     .hero-text {
@@ -37,8 +37,8 @@
       text-align: center;
     }
     .profile-img {
-      width: 300px;
-      height: 300px;
+      width: 350px;
+      height: 350px;
       border-radius: 50%;
       border: 5px solid #00C4B4;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
@@ -65,17 +65,11 @@
       font-weight: 400;
       border-bottom: none;
     }
-    .hero h3 {
-      color: #00C4B4;
-      font-size: 1.5em;
-      margin: 10px 0;
-      font-weight: 700;
-      border-bottom: none;
-    }
     .hero p {
       color: #bdc3c7;
       font-size: 1.1em;
       line-height: 1.6;
+      margin: 10px 0;
     }
     .section {
       padding: 40px 0;
@@ -154,8 +148,8 @@
         text-align: left;
       }
       .profile-img {
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
       }
       .hero h1 {
         font-size: 2.5em;
@@ -163,26 +157,20 @@
       .hero h2 {
         font-size: 1.5em;
       }
-      .hero h3 {
-        font-size: 1.3em;
-      }
       .skills-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
     @media (max-width: 480px) {
       .profile-img {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
       }
       .hero h1 {
         font-size: 2em;
       }
       .hero h2 {
         font-size: 1.2em;
-      }
-      .hero h3 {
-        font-size: 1.1em;
       }
       .skills-grid {
         grid-template-columns: 1fr;
@@ -200,8 +188,7 @@
       <div class="hero-text">
         <h1>Hello I'm Samuel Precious</h1>
         <h2>Your Data Analyst</h2>
-        <h3> </h3>
-        <p>As a data analyst, I help businesses unlock the full potential of their data to make smarter decisions. My work solves critical challenges like identifying hidden trends in sales data, optimizing operational workflows, and uncovering customer behavior patterns. By transforming raw data into clear, actionable insights using Excel and Power BI, I empower teams to understand their data and act on it effectively, driving measurable results and business growth.</p>
+        <p>As a data analyst, I specialize in transforming complex data into clear, actionable insights using Excel and Power BI. My work solves challenges like identifying sales trends, optimizing workflows, and uncovering customer insights. By understanding data’s purpose, I deliver solutions that empower businesses to make informed decisions and drive growth.</p>
       </div>
       <div class="hero-image">
         <img src="images/profile.jpg" alt="Samuel Precious" class="profile-img">
