@@ -84,11 +84,11 @@
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+      gap: 20px;
     }
     .skill {
       text-align: center;
-      padding: 20px;
+      padding: 10px;
       background: rgba(255, 255, 255, 0.1);
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
