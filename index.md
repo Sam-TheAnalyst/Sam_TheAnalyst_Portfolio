@@ -137,6 +137,14 @@
       width: 100%;
       height: 400px;
       border-radius: 8px;
+      border: none;
+    }
+    .behance-iframe {
+      width: 100%;
+      max-width: 404px;
+      height: 316px;
+      border-radius: 8px;
+      border: none;
     }
     p, li {
       line-height: 1.6;
@@ -164,6 +172,10 @@
       .skills-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+      .behance-iframe {
+        max-width: 100%;
+        height: 250px;
+      }
     }
     @media (max-width: 480px) {
       .profile-img {
@@ -178,6 +190,9 @@
       }
       .skills-grid {
         grid-template-columns: 1fr;
+      }
+      .behance-iframe {
+        height: 200px;
       }
     }
     @keyframes fadeIn {
@@ -228,14 +243,13 @@
       </div>
     </div>
     <div class="section">
-      <h3>Portfolio</h3>
+      <h3>Projects</h3>
       <div class="project">
         <h4>Sales Trends Dashboard</h4>
         <p>Analyzed sales data from 2009-2012 to identify trends and forecast performance, helping optimize inventory.</p>
         <p><strong>Tools</strong>: Power BI, Excel</p>
         <p><a href="[your-power-bi-link-or-repo-folder]">View Dashboard</a> | <a href="[your-excel-file-link]">Download Excel</a></p>
-        <!-- Replace with Power BI iframe if available -->
-        <!-- <iframe src="[your-power-bi-iframe-url]" allowFullScreen="true"></iframe> -->
+        <iframe src="https://www.behance.net/embed/project/210978159?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" class="behance-iframe"></iframe>
       </div>
       <div class="project">
         <h4>Customer Behavior Analysis</h4>
