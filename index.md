@@ -22,19 +22,19 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: center;
       gap: 40px;
       padding: 60px 0;
       animation: fadeIn 1s ease-in;
+    }
+    .hero-text {
+      flex: 1;
+      min-width: 200px;
+      text-align: left;
+    }
+    .hero-image {
+      flex: 1;
+      min-width: 200px;
       text-align: center;
-    }
-    .hero-left {
-      flex: 1;
-      min-width: 200px;
-    }
-    .hero-right {
-      flex: 1;
-      min-width: 200px;
     }
     .profile-img {
       width: 250px;
@@ -44,6 +44,8 @@
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       object-fit: cover;
+      display: block;
+      margin: 0 auto;
     }
     .profile-img:hover {
       transform: scale(1.05);
@@ -134,10 +136,10 @@
     @media (max-width: 768px) {
       .hero {
         flex-direction: column;
-        text-align: center;
       }
-      .hero-left, .hero-right {
+      .hero-text, .hero-image {
         flex: 100%;
+        text-align: left;
       }
       .profile-img {
         width: 200px;
@@ -177,12 +179,12 @@
 <body>
   <div class="container">
     <div class="hero">
-      <div class="hero-left">
-        <img src="images/profile.jpg" alt="Samuel Precious" class="profile-img" <!-- CLUE: Replace this image path with your uploaded file path, e.g., images/samuel-profile.png -->>
-      </div>
-      <div class="hero-right">
+      <div class="hero-text">
         <h1>Hello I'm Samuel Precious</h1>
         <h2>Your Data Analyst</h2>
+      </div>
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="Samuel Precious" class="profile-img" <!-- CLUE: Replace this image path with your uploaded file path, e.g., images/samuel-profile.png -->>
       </div>
     </div>
     <div class="section">
