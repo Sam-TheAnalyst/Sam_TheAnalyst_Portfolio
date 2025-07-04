@@ -88,7 +88,7 @@
     }
     .skill {
       text-align: center;
-      padding: 10px;
+      padding: 20px;
       background: rgba(255, 255, 255, 0.1);
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -107,7 +107,7 @@
       color: #00C4B4;
       font-size: 1.2em;
       font-weight: 700;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     .skill p {
       color: #bdc3c7;
