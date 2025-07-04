@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -36,8 +37,8 @@
       text-align: center;
     }
     .profile-img {
-      width: 250px;
-      height: 250px;
+      width: 300px;
+      height: 300px;
       border-radius: 50%;
       border: 5px solid #00C4B4;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
@@ -63,6 +64,18 @@
       margin: 10px 0;
       font-weight: 400;
       border-bottom: none;
+    }
+    .hero h3 {
+      color: #00C4B4;
+      font-size: 1.5em;
+      margin: 10px 0;
+      font-weight: 700;
+      border-bottom: none;
+    }
+    .hero p {
+      color: #bdc3c7;
+      font-size: 1.1em;
+      line-height: 1.6;
     }
     .section {
       padding: 40px 0;
@@ -141,8 +154,8 @@
         text-align: left;
       }
       .profile-img {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
       }
       .hero h1 {
         font-size: 2.5em;
@@ -150,20 +163,26 @@
       .hero h2 {
         font-size: 1.5em;
       }
+      .hero h3 {
+        font-size: 1.3em;
+      }
       .skills-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
     @media (max-width: 480px) {
       .profile-img {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
       }
       .hero h1 {
         font-size: 2em;
       }
       .hero h2 {
         font-size: 1.2em;
+      }
+      .hero h3 {
+        font-size: 1.1em;
       }
       .skills-grid {
         grid-template-columns: 1fr;
@@ -181,9 +200,12 @@
       <div class="hero-text">
         <h1>Hello I'm Samuel Precious</h1>
         <h2>Your Data Analyst</h2>
+        <h3> </h3>
+        <p>As a data analyst, I help businesses unlock the full potential of their data to make smarter decisions. My work solves critical challenges like identifying hidden trends in sales data, optimizing operational workflows, and uncovering customer behavior patterns. By transforming raw data into clear, actionable insights using Excel and Power BI, I empower teams to understand their data and act on it effectively, driving measurable results and business growth.</p>
       </div>
       <div class="hero-image">
-       <img src="images/profile.jpg" alt="Samuel Precious" class="profile-img"> <!-- CLUE: Replace this image path with your uploaded file path, e.g., images/samuel-profile.png -->>
+        <img src="images/profile.jpg" alt="Samuel Precious" class="profile-img">
+        <!-- If your image has a different name, update the src attribute, e.g., src="images/samuel-profile.png" -->
       </div>
     </div>
     <div class="section">
