@@ -1,10 +1,10 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samuel Precious - Data Analyst Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     body {
       background: #1A1A1A;
@@ -83,7 +83,7 @@
     }
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
     }
     .skill {
@@ -91,25 +91,28 @@
       padding: 20px;
       background: rgba(255, 255, 255, 0.1);
       border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .skill:hover {
       transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
     .skill i {
       font-size: 48px;
       color: #00C4B4;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     .skill h4 {
       color: #00C4B4;
       font-size: 1.2em;
+      font-weight: 700;
       margin-bottom: 10px;
     }
     .skill p {
       color: #bdc3c7;
       font-size: 1em;
+      line-height: 1.5;
     }
     .project {
       background: rgba(255, 255, 255, 0.1);
