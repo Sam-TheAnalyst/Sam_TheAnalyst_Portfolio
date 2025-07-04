@@ -80,6 +80,7 @@
       border-bottom: 2px solid #00C4B4;
       padding-bottom: 10px;
       margin-bottom: 20px;
+      display: inline-block;
     }
     .skills-grid {
       display: grid;
