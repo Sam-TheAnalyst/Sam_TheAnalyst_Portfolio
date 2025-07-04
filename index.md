@@ -76,7 +76,7 @@
     }
     h3 {
       color: #00C4B4;
-      font-size: 2.3em;
+      font-size: 3em;
       border-bottom: 2px solid #00C4B4;
       padding-bottom: 10px;
       margin-bottom: 20px;
