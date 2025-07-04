@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samuel Precious - Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="[invalid url, do not cite]
   <style>
     body {
-      background: linear-gradient(to right, #1a1a1a, #2c3e50);
-      color: #ecf0f1;
-      font-family: 'Arial', sans-serif;
+      background-color: #1A1A1A;
+      color: #FFFFFF;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
     }
     .container {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 40px 20px;
     }
@@ -25,39 +26,65 @@
       gap: 40px;
       padding: 60px 0;
       animation: fadeIn 1s ease-in;
-      text-align: center;
     }
     .hero-left {
       flex: 1;
-      min-width: 250px;
+      min-width: 300px;
+      text-align: left;
     }
     .hero-right {
       flex: 1;
-      min-width: 250px;
+      min-width: 300px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .profile-img {
-      width: 250px;
-      height: 250px;
+      width: 300px;
+      height: 300px;
       border-radius: 50%;
-      border: 5px solid #3498db;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      object-fit: cover;
+      z-index: 2;
     }
-    .profile-img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+    .circle {
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #00D7A7, #00FFBF);
+      position: absolute;
+      z-index: 1;
     }
     h1 {
-      color: #3498db;
-      font-size: 3em;
-      margin: 0;
+      font-size: 48px;
       font-weight: bold;
+      margin: 0;
+      line-height: 1.2;
+    }
+    h1 .small {
+      font-size: 24px;
+      font-weight: normal;
+      display: block;
     }
     h2 {
-      color: #ecf0f1;
-      font-size: 1.8em;
+      font-size: 36px;
+      color: #00D7A7;
       margin: 10px 0;
       font-weight: normal;
+    }
+    .contact-btn {
+      background-color: #FFC107;
+      color: #000;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+    .contact-btn:hover {
+      background-color: #FFB300;
     }
     .section {
       padding: 40px 0;
@@ -73,16 +100,6 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
-    }
-    @media (max-width: 1080px) {
-      .skills-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-    @media (max-width: 640px) {
-      .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
     }
     .skill {
       text-align: center;
@@ -145,6 +162,52 @@
       .hero-left, .hero-right {
         flex: 100%;
       }
+      .profile-img {
+        width: 200px;
+        height: 200px;
+      }
+      .circle {
+        width: 300px;
+        height: 300px;
+      }
+      h1 {
+        font-size: 36px;
+      }
+      h1 .small {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+    }
+    @media (max-width: 480px) {
+      .profile-img {
+        width: 150px;
+        height: 150px;
+      }
+      .circle {
+        width: 250px;
+        height: 250px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      h1 .small {
+        font-size: 14px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
+    @media (max-width: 1080px) {
+      .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 640px) {
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
     @keyframes fadeIn {
       from { opacity: 0; }
@@ -156,11 +219,14 @@
   <div class="container">
     <div class="hero">
       <div class="hero-left">
-        <img src="images/profile.jpg" alt="Samuel Precious" class="profile-img">
+        <h1 class="small">Hello</h1>
+        <h1>I'm Samuel Precious</h1>
+        <h2>Your Data Analyst</h2>
+        <button class="contact-btn">Contact Me</button>
       </div>
       <div class="hero-right">
-        <h1>Samuel Precious</h1>
-        <h2>The Data Analyst</h2>
+        <div class="circle"></div>
+        <img src="images/profile.jpg" alt="Samuel Precious" class="profile-img" <!-- CLUE: Replace this image path with your uploaded file path -->>
       </div>
     </div>
     <div class="section">
