@@ -67,7 +67,7 @@
       border-bottom: none;
     }
     .hero p {
-      color: #bdc3c7;
+      color: #bd c3c7;
       font-size: 1.1em;
       line-height: 1.6;
       margin: 10px 0;
@@ -259,7 +259,7 @@
         </div>
       </div>
     </div>
-    <!-- Updated Portfolio Section -->
+    <!-- Updated Portfolio Section with Five Projects -->
     <div class="section portfolio-section">
       <h3>Projects</h3>
       <div class="grid-container">
@@ -279,14 +279,29 @@
           </div>
           <h4 class="project-title">Customer Behavior Analysis</h4>
         </div>
-<div class="grid-container">
         <div class="project-item">
           <div class="project-card">
             <div class="iframe-wrapper">
-             <iframe src="https://www.behance.net/embed/project/191472599?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+              <iframe src="https://www.behance.net/embed/project/172419277?ilo0=1" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" scrolling="no"></iframe>
             </div>
           </div>
-          <h4 class="project-title">Sales Dashboard</h4>
+          <h4 class="project-title">Project 3</h4>
+        </div>
+        <div class="project-item">
+          <div class="project-card">
+            <div class="iframe-wrapper">
+              <iframe src="https://www.behance.net/embed/project/200509947?ilo0=1" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" scrolling="no"></iframe>
+            </div>
+          </div>
+          <h4 class="project-title">Project 4</h4>
+        </div>
+        <div class="project-item">
+          <div class="project-card">
+            <div class="iframe-wrapper">
+              <iframe src="https://www.behance.net/embed/project/191472599?ilo0=1" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" scrolling="no"></iframe>
+            </div>
+          </div>
+          <h4 class="project-title">Project 5</h4>
         </div>
       </div>
     </div>
