@@ -457,7 +457,7 @@
           <img src="images/logo.png" alt="Logo" class="logo" style="max-width: 60px; margin-bottom: 25px;">
           <h3 style="color: #333; margin-bottom: 15px; font-size: 1.5em;">Contact Us</h3>
           <p style="color: #555; font-size: 1em; text-transform: uppercase; margin-bottom: 25px;">Feel free to contact us any time. We will get back to you as soon as we can!</p>
-          <form action="[your-formspree-endpoint]" method="POST">
+          <form action="[[your-formspree-endpoint](https://formspree.io/f/mgvybkjn)]" method="POST">
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your Name" required>
