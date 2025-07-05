@@ -286,7 +286,7 @@
     .social-icons {
       display: flex;
       gap: 15px;
-      margin-top: 20px;
+      margin-bottom: 20px;
       align-items: flex-start;
     }
     .social-icons a {
@@ -470,18 +470,18 @@
         </div>
         <div class="contact-info">
           <h3 style="color: white; margin-bottom: 25px; font-size: 1.5em;">Get in Touch</h3>
-          <ul class="contact-list">
-            <li><i class="fas fa-envelope"></i> samuel.precious@example.com</li>
-            <li><i class="fas fa-phone"></i> +123 456 7890</li>
-            <li><i class="fas fa-map-marker-alt"></i> 123 Data Lane, Insight City</li>
-            <li><i class="fas fa-clock"></i> Mon-Fri, 9:00 AM - 5:00 PM</li>
-          </ul>
           <div class="social-icons">
             <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://www.x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
             <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
           </div>
+          <ul class="contact-list">
+            <li><i class="fas fa-envelope"></i> samuel.precious@example.com</li>
+            <li><i class="fas fa-phone"></i> +123 456 7890</li>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Data Lane, Insight City</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri, 9:00 AM - 5:00 PM</li>
+          </ul>
         </div>
       </div>
     </div>
