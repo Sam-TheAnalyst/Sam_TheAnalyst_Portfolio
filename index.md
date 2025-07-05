@@ -116,10 +116,10 @@
       font-size: 1em;
       line-height: 1.5;
     }
-    /* New Portfolio Section Styles */
+    /* Portfolio Section Styles */
     .portfolio-section {
-      background: linear-gradient(to bottom right, #3498db, #2c3e50);
-      padding: 50px 0;
+      background: #1A1A1A;
+      padding: 40px 0;
     }
     .grid-container {
       display: grid;
@@ -134,11 +134,13 @@
       align-items: center;
     }
     .project-card {
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      border: 2px solid #00C4B4;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       width: 100%;
       max-width: 404px;
+      overflow: hidden;
     }
     .iframe-wrapper {
       position: relative;
@@ -152,21 +154,23 @@
       width: 100%;
       height: 100%;
       border: none;
+      overflow: hidden;
+      scrolling: no;
     }
     .project-title {
       font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      color: black;
+      font-weight: 700;
+      color: #FFFFFF;
       text-align: center;
       margin-top: 15px;
-      font-size: 18px;
+      font-size: 1.2em;
     }
     @media (max-width: 768px) {
       .grid-container {
         grid-template-columns: 1fr;
       }
     }
-    /* End of New Portfolio Section Styles */
+    /* End of Portfolio Section Styles */
     p, li {
       line-height: 1.6;
       font-size: 1.1em;
@@ -262,7 +266,7 @@
         <div class="project-item">
           <div class="project-card">
             <div class="iframe-wrapper">
-              <iframe src="https://www.behance.net/embed/project/210978159?ilo0=1" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+              <iframe src="https://www.behance.net/embed/project/210978159?ilo0=1" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" scrolling="no"></iframe>
             </div>
           </div>
           <h4 class="project-title">Sales Trends Dashboard</h4>
@@ -270,7 +274,7 @@
         <div class="project-item">
           <div class="project-card">
             <div class="iframe-wrapper">
-              <iframe src="https://www.behance.net/embed/project/200511787?ilo0=1" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+              <iframe src="https://www.behance.net/embed/project/200511787?ilo0=1" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" scrolling="no"></iframe>
             </div>
           </div>
           <h4 class="project-title">Customer Behavior Analysis</h4>
