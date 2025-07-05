@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -115,36 +116,80 @@
       font-size: 1em;
       line-height: 1.5;
     }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
     .project {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
+      background: linear-gradient(145deg, #2D3336, #1A1A1A);
+      padding: 25px;
+      border-radius: 12px;
+      border: 5px solid #00C4B4;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .project:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     }
     .project h4 {
-      color: #00C4B4;
-      font-size: 1.5em;
+      color: #FFFFFF;
+      font-size: 2em;
+      font-weight: 700;
       margin-bottom: 15px;
+      text-align: center;
     }
-    a {
+    .project p {
+      color: #bdc3c7;
+      font-size: 1em;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .project .tools {
+      color: #bdc3c7;
+      font-size: 0.9em;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .project a {
       color: #00C4B4;
       text-decoration: none;
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
     }
-    a:hover {
-      text-decoration: none;
+    .project .btn {
+      background: #00C4B4;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      transition: opacity 0.3s ease;
+    }
+    .project .btn:hover {
+      opacity: 0.8;
     }
     iframe {
       width: 100%;
-      height: 400px;
+      height: 200px;
       border-radius: 8px;
       border: none;
+      display: block;
+      margin: 0 auto;
     }
     .behance-iframe {
       width: 100%;
       max-width: 404px;
       height: 316px;
       border-radius: 8px;
-      border: none;
+      border: 2px solid #00C4B4;
+      margin: 15px auto;
     }
     p, li {
       line-height: 1.6;
@@ -172,6 +217,9 @@
       .skills-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
       .behance-iframe {
         max-width: 100%;
         height: 250px;
@@ -189,6 +237,9 @@
         font-size: 1.2em;
       }
       .skills-grid {
+        grid-template-columns: 1fr;
+      }
+      .projects-grid {
         grid-template-columns: 1fr;
       }
       .behance-iframe {
@@ -236,7 +287,7 @@
           <p>Preparing accurate datasets using Excel and Power BI for reliable results.</p>
         </div>
         <div class="skill">
-          <i class="fas fa-lightbulb"></i> <!-- Placeholder icon for Business Intelligence -->
+          <i class="fas fa-lightbulb"></i>
           <h4>Business Intelligence</h4>
           <p>Building KPIs to track and boost business performance with actionable insights.</p>
         </div>
@@ -244,24 +295,30 @@
     </div>
     <div class="section">
       <h3>Projects</h3>
-      <div class="project">
-        <h4>Sales Trends Dashboard</h4>
-        <p>Analyzed sales data from 2009-2012 to identify trends and forecast performance, helping optimize inventory.</p>
-        <p><strong>Tools</strong>: Power BI, Excel</p>
-        <p><a href="[your-power-bi-link-or-repo-folder]">View Dashboard</a> | <a href="[your-excel-file-link]">Download Excel</a></p>
-        <iframe src="https://www.behance.net/embed/project/210978159?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" class="behance-iframe"></iframe>
-      </div>
-      <div class="project">
-        <h4>Customer Behavior Analysis</h4>
-        <p>Segmented customers by purchase history to guide targeted marketing strategies, boosting engagement.</p>
-        <p><strong>Tools</strong>: Excel, Power BI</p>
-        <p><a href="[your-report-link-or-repo-folder]">View Report</a></p>
-      </div>
-      <div class="project">
-        <h4>Operational Efficiency Report</h4>
-        <p>Identified workflow bottlenecks to improve efficiency by 10% using detailed data analysis.</p>
-        <p><strong>Tools</strong>: Excel</p>
-        <p><a href="[your-excel-file-link]">Download Report</a></p>
+      <div class="projects-grid">
+        <div class="project">
+          <h4>Sales Trends Dashboard</h4>
+          <p>Analyzed sales data from 2009-2012 to identify trends and forecast performance, helping optimize inventory.</p>
+          <p class="tools"><strong>Tools</strong>: Power BI, Excel</p>
+          <a href="[your-power-bi-link-or-repo-folder]">View Dashboard</a>
+          <a href="[your-excel-file-link]">Download Excel</a>
+          <iframe src="https://www.behance.net/embed/project/210978159?ilo0=1" class="behance-iframe" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+          <button class="btn">View Details</button>
+        </div>
+        <div class="project">
+          <h4>Customer Behavior Analysis</h4>
+          <p>Segmented customers by purchase history to guide targeted marketing strategies, boosting engagement.</p>
+          <p class="tools"><strong>Tools</strong>: Excel, Power BI</p>
+          <a href="[your-report-link-or-repo-folder]">View Report</a>
+          <button class="btn">View Details</button>
+        </div>
+        <div class="project">
+          <h4>Operational Efficiency Report</h4>
+          <p>Identified workflow bottlenecks to improve efficiency by 10% using detailed data analysis.</p>
+          <p class="tools"><strong>Tools</strong>: Excel</p>
+          <a href="[your-excel-file-link]">Download Report</a>
+          <button class="btn">View Details</button>
+        </div>
       </div>
     </div>
     <div class="section">
