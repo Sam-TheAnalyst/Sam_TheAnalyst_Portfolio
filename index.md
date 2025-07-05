@@ -268,6 +268,9 @@
     .contact-list {
       list-style: none;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
     .contact-list li {
       margin-bottom: 20px;
@@ -284,6 +287,7 @@
       display: flex;
       gap: 15px;
       margin-top: 20px;
+      align-items: flex-start;
     }
     .social-icons a {
       color: #00C4B4;
