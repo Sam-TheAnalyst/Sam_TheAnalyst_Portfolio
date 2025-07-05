@@ -273,24 +273,24 @@
     .contact-list {
       list-style: none;
       padding: 0;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
     }
     .contact-list li {
       margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      font-size: 1.1em;
     }
     .contact-list i {
-      margin-right: 15px;
+      margin-right: 0;
       color: #00C4B4;
-      font-size: 1.2em;
+      font-size: 1.5em;
+      transition: color 0.3s ease;
     }
     .contact-list a {
       color: #00C4B4;
       text-decoration: none;
-      transition: color 0.3s ease;
     }
-    .contact-list a:hover {
+    .contact-list a:hover i {
       color: #00a899;
     }
     @media (max-width: 768px) {
@@ -314,6 +314,9 @@
       .contact-form, .contact-info {
         flex: none;
         width: 100%;
+      }
+      .contact-list {
+        justify-content: center;
       }
     }
     /* End of Contact Section Styles */
@@ -454,10 +457,7 @@
       <h3>Contact</h3>
       <div class="contact-content">
         <div class="contact-form">
-          <img src="images/logo.png" alt="Logo" class="logo" style="max-width: 60px; margin-bottom: 25px;">
-          <h3 style="color: #333; margin-bottom: 15px; font-size: 1.5em;">Contact Us</h3>
-          <p style="color: #555; font-size: 1em; text-transform: uppercase; margin-bottom: 25px;">Feel free to contact us any time. We will get back to you as soon as we can!</p>
-          <form action="[[your-formspree-endpoint](https://formspree.io/f/mgvybkjn)]" method="POST">
+          <form action="https://formspree.io/f/mgvybkjn" method="POST">
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -476,11 +476,16 @@
         <div class="contact-info">
           <h3 style="color: white; margin-bottom: 25px; font-size: 1.5em;">Get in Touch</h3>
           <ul class="contact-list">
+            <li><i class="fab fa-linkedin"><a href="[your-linkedin-profile]" style="display: block; width: 100%; height: 100%;"></a></i></li>
+            <li><i class="fab fa-x"><a href="[your-x-profile]" style="display: block; width: 100%; height: 100%;"></a></i></li>
+            <li><i class="fab fa-instagram"><a href="[your-instagram-profile]" style="display: block; width: 100%; height: 100%;"></a></i></li>
+            <li><i class="fab fa-facebook"><a href="[your-facebook-profile]" style="display: block; width: 100%; height: 100%;"></a></i></li>
+          </ul>
+          <ul class="contact-list">
             <li><i class="fas fa-envelope"></i> samuel.precious@example.com</li>
             <li><i class="fas fa-phone"></i> +123 456 7890</li>
             <li><i class="fas fa-map-marker-alt"></i> 123 Data Lane, Insight City</li>
             <li><i class="fas fa-clock"></i> Mon-Fri, 9:00 AM - 5:00 PM</li>
-            <li><i class="fab fa-linkedin"></i> <a href="[your-linkedin-profile]" style="color: #00C4B4; text-decoration: none;">My Profile</a></li>
           </ul>
         </div>
       </div>
