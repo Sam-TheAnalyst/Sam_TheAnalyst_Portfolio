@@ -172,115 +172,148 @@
     }
     /* Contact Section Styles */
     .contact-section {
+      padding: 40px 0;
+    }
+    .contact-content {
       display: flex;
-      gap: 20px;
-      margin-top: 20px;
+      gap: 40px;
+      justify-content: space-between;
     }
     .contact-form {
-      flex: 2;
+      flex: 1;
       background: white;
       padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
       position: relative;
+      transition: transform 0.3s ease;
+    }
+    .contact-form:hover {
+      transform: translateY(-5px);
     }
     .contact-form::before {
       content: '';
       position: absolute;
-      left: -10px;
+      left: -15px;
       top: 50%;
       transform: translateY(-50%);
-      width: 5px;
-      height: 50px;
+      width: 8px;
+      height: 60px;
       background: #00C4B4;
+      border-radius: 4px;
     }
     .contact-info {
       flex: 1;
-      background: #333;
-      color: white;
+      background: linear-gradient(135deg, #333 0%, #1A1A1A 100%);
       padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
       position: relative;
+      transition: transform 0.3s ease;
+    }
+    .contact-info:hover {
+      transform: translateY(-5px);
     }
     .contact-info::before {
       content: '';
       position: absolute;
-      top: -10px;
+      top: -15px;
       left: 50%;
       transform: translateX(-50%);
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
       background: #00C4B4;
+      border-radius: 50%;
     }
     .form-group {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
     .form-group label {
       display: block;
-      margin-bottom: 5px;
-      font-size: 0.8em;
+      margin-bottom: 8px;
+      font-size: 0.9em;
       text-transform: uppercase;
-      color: black;
+      color: #333;
+      font-weight: 700;
     }
     .form-group input, .form-group textarea {
       width: 100%;
-      padding: 10px 0;
+      padding: 12px 0;
       border: none;
-      border-bottom: 1px solid black;
+      border-bottom: 2px solid #333;
       background: transparent;
-      color: black;
-      font-size: 1em;
+      color: #333;
+      font-size: 1.1em;
+      transition: border-color 0.3s ease;
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      border-bottom-color: #00C4B4;
+      outline: none;
     }
     .form-group textarea {
-      height: 100px;
+      height: 120px;
+      resize: vertical;
     }
     .btn-submit {
       background: #00C4B4;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 30px;
       border: none;
-      border-radius: 5px;
+      border-radius: 25px;
       cursor: pointer;
-      font-size: 1em;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      transition: opacity 0.3s ease;
+      font-size: 1.1em;
+      font-weight: 700;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease, transform 0.3s ease;
     }
     .btn-submit:hover {
-      opacity: 0.8;
+      background: #00a899;
+      transform: translateY(-2px);
     }
     .contact-list {
       list-style: none;
       padding: 0;
     }
     .contact-list li {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       display: flex;
       align-items: center;
+      font-size: 1.1em;
     }
     .contact-list i {
-      margin-right: 10px;
+      margin-right: 15px;
       color: #00C4B4;
+      font-size: 1.2em;
+    }
+    .contact-list a {
+      color: #00C4B4;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .contact-list a:hover {
+      color: #00a899;
     }
     @media (max-width: 768px) {
-      .contact-section {
+      .contact-content {
         flex-direction: column;
+        gap: 30px;
+      }
+      .contact-form::before {
+        left: 50%;
+        top: -15px;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 8px;
+        border-radius: 4px;
+      }
+      .contact-info::before {
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
       }
       .contact-form, .contact-info {
         flex: none;
         width: 100%;
-      }
-      .contact-form::before {
-        left: 50%;
-        top: -10px;
-        transform: translateX(-50%);
-        width: 50px;
-        height: 5px;
-      }
-      .contact-info::before {
-        top: -10px;
-        left: 50%;
-        transform: translateX(-50%);
       }
     }
     /* End of Contact Section Styles */
@@ -421,27 +454,27 @@
       <h3>Contact</h3>
       <div class="contact-content">
         <div class="contact-form">
-          <img src="images/logo.png" alt="Logo" class="logo" style="max-width: 50px; margin-bottom: 20px;">
-          <h3 style="color: black; margin-bottom: 10px;">Contact Us</h3>
-          <p style="color: black; font-size: 0.9em; text-transform: uppercase; margin-bottom: 20px;">Feel free to contact us any time. We will get back to you as soon as we can!</p>
+          <img src="images/logo.png" alt="Logo" class="logo" style="max-width: 60px; margin-bottom: 25px;">
+          <h3 style="color: #333; margin-bottom: 15px; font-size: 1.5em;">Contact Us</h3>
+          <p style="color: #555; font-size: 1em; text-transform: uppercase; margin-bottom: 25px;">Feel free to contact us any time. We will get back to you as soon as we can!</p>
           <form action="[your-formspree-endpoint]" method="POST">
             <div class="form-group">
-              <label for="name">NAME</label>
-              <input type="text" id="name" name="name" placeholder="NAME" required>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
             </div>
             <div class="form-group">
-              <label for="email">EMAIL</label>
-              <input type="email" id="email" name="email" placeholder="EMAIL" required>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
             </div>
             <div class="form-group">
-              <label for="message">MESSAGE</label>
-              <textarea id="message" name="message" placeholder="MESSAGE" required></textarea>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your Message" required></textarea>
             </div>
-            <button type="submit" class="btn-submit">SEND</button>
+            <button type="submit" class="btn-submit">Send</button>
           </form>
         </div>
         <div class="contact-info">
-          <h3 style="color: white; margin-bottom: 20px;">INFO</h3>
+          <h3 style="color: white; margin-bottom: 25px; font-size: 1.5em;">Get in Touch</h3>
           <ul class="contact-list">
             <li><i class="fas fa-envelope"></i> samuel.precious@example.com</li>
             <li><i class="fas fa-phone"></i> +123 456 7890</li>
