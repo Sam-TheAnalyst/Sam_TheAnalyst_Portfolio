@@ -276,6 +276,11 @@
             <div class="iframe-wrapper">
               <iframe src="https://www.behance.net/embed/project/200511787?ilo0=1" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" scrolling="no"></iframe>
             </div>
+<div class="project-item">
+          <div class="project-card">
+            <div class="iframe-wrapper">
+              <iframe src="https://www.behance.net/embed/project/172419277?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
           </div>
           <h4 class="project-title">Customer Behavior Analysis</h4>
         </div>
