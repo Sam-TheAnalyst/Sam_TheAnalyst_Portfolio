@@ -3,120 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Samuel Precious, Data Analyst specializing in Excel and Power BI">
-  <meta name="keywords" content="data analyst, Power BI, Excel, data visualization">
-  <meta name="author" content="Samuel Precious">
   <title>Samuel Precious - Data Analyst Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: #ffffff;
-      font-family: 'Roboto', sans-serif;
+      background: #1A1A1A;
+      color: #ecf0f1;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
-    }
-    .navbar {
-      background: rgba(0, 0, 0, 0.8);
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .navbar ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-    .navbar a {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 1.1em;
-      transition: color 0.3s ease;
-    }
-    .navbar a:hover {
-      color: #00d4ff;
     }
     .container {
-      max-width: 1200px;
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 30px 20px;
     }
     .hero {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 40px;
-      padding: 50px 0;
-      background: url('https://images.unsplash.com/photo-1551288049-b1f3aaca3d75') no-repeat center/cover;
-      border-radius: 12px;
+      padding: 30px 0;
       animation: fadeIn 1s ease-in;
     }
     .hero-text {
       flex: 1;
-      min-width: 300px;
+      min-width: 200px;
       text-align: left;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 8px;
     }
     .hero-image {
       flex: 1;
-      min-width: 300px;
+      min-width: 200px;
       text-align: center;
     }
     .profile-img {
-      width: 300px;
-      height: 300px;
+      width: 350px;
+      height: 350px;
       border-radius: 50%;
-      border: 5px solid #00d4ff;
+      border: 5px solid #00C4B4;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       object-fit: cover;
+      display: block;
+      margin: 0 auto;
     }
     .profile-img:hover {
       transform: scale(1.05);
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
     }
     .hero h1 {
-      font-size: 2.8em;
+      color: #FFFFFF;
+      font-size: 3em;
       margin: 0;
       font-weight: 700;
-      color: #ffffff;
+      border-bottom: none;
     }
     .hero h2 {
-      color: #00d4ff;
-      font-size: 1.6em;
+      color: #00C4B4;
+      font-size: 1.8em;
       margin: 10px 0;
       font-weight: 400;
+      border-bottom: none;
     }
     .hero p {
+      color: #bdc3c7;
       font-size: 1.1em;
-      color: #e0e0e0;
-      line-height: 1.8;
+      line-height: 1.6;
+      margin: 10px 0;
     }
     .section {
-      padding: 60px 0;
+      padding: 40px 0;
     }
     h3 {
-      color: #00d4ff;
-      font-size: 2em;
-      border-bottom: 2px solid #00d4ff;
+      color: #00C4B4;
+      font-size: 1.8em;
+      border-bottom: 2px solid #00C4B4;
       padding-bottom: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       display: inline-block;
     }
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
     }
     .skill {
@@ -132,219 +101,136 @@
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
     .skill i {
-      font-size: 50px;
-      color: #00d4ff;
+      font-size: 48px;
+      color: #00C4B4;
       margin-bottom: 15px;
     }
     .skill h4 {
-      color: #ffffff;
-      font-size: 1.3em;
+      color: #00C4B4;
+      font-size: 1.2em;
       font-weight: 700;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     .skill p {
-      color: #e0e0e0;
+      color: #bdc3c7;
       font-size: 1em;
+      line-height: 1.5;
     }
-    .projects-grid {
+    /* New Portfolio Section Styles */
+    .portfolio-section {
+      background: linear-gradient(to bottom right, #3498db, #2c3e50);
+      padding: 50px 0;
+    }
+    .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
     }
-    .project {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 25px;
-      border-radius: 12px;
-      border: 2px solid #00d4ff;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .project-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .project-card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 404px;
+    }
+    .iframe-wrapper {
       position: relative;
-      overflow: hidden;
+      padding-bottom: 78.2%; /* 316 / 404 */
+      height: 0;
     }
-    .project:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    }
-    .project img {
+    .iframe-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 15px;
+      height: 100%;
+      border: none;
     }
-    .project h4 {
-      color: #ffffff;
-      font-size: 1.8em;
-      font-weight: 700;
-      margin-bottom: 10px;
+    .project-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color: black;
       text-align: center;
+      margin-top: 15px;
+      font-size: 18px;
     }
-    .project p {
-      color: #e0e0e0;
-      font-size: 1em;
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+    /* End of New Portfolio Section Styles */
+    p, li {
       line-height: 1.6;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-    .project .tools {
-      color: #00d4ff;
-      font-size: 0.9em;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-    .project a {
-      color: #00d4ff;
-      text-decoration: none;
-      display: block;
-      text-align: center;
-      margin-bottom: 10px;
-      font-weight: 500;
-    }
-    .project a:hover {
-      text-decoration: underline;
-    }
-    .project .btn {
-      background: #00d4ff;
-      color: #1e3c72;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-align: center;
-      display: block;
-      margin: 0 auto;
-      transition: background 0.3s ease;
-    }
-    .project .btn:hover {
-      background: #00b7d4;
-    }
-    .contact-form {
-      max-width: 600px;
-      margin: 0 auto;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 5px;
-      background: rgba(255, 255, 255, 0.2);
-      color: #ffffff;
-      font-size: 1em;
-    }
-    .contact-form button {
-      background: #00d4ff;
-      color: #1e3c72;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    .contact-form button:hover {
-      background: #00b7d4;
-    }
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-    .blog-post {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-    }
-    .blog-post:hover {
-      transform: translateY(-5px);
-    }
-    .blog-post h4 {
-      color: #ffffff;
-      font-size: 1.5em;
-      margin-bottom: 10px;
-    }
-    .blog-post p {
-      color: #e0e0e0;
-      font-size: 1em;
-    }
-    .blog-post a {
-      color: #00d4ff;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .blog-post a:hover {
-      text-decoration: underline;
+      font-size: 1.1em;
+      color: #bdc3c7;
     }
     @media (max-width: 768px) {
       .hero {
         flex-direction: column;
-        text-align: center;
       }
       .hero-text, .hero-image {
         flex: 100%;
+        text-align: left;
       }
+      .profile-img {
+        width: 300px;
+        height: 300px;
+      }
+      .hero h1 {
+        font-size: 2.5em;
+      }
+      .hero h2 {
+        font-size: 1.5em;
+      }
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
       .profile-img {
         width: 250px;
         height: 250px;
       }
       .hero h1 {
-        font-size: 2.2em;
-      }
-      .hero h2 {
-        font-size: 1.4em;
-      }
-      .navbar ul {
-        flex-direction: column;
-        gap: 15px;
-      }
-      .skills-grid, .projects-grid, .blog-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    @media (max-width: 480px) {
-      .profile-img {
-        width: 200px;
-        height: 200px;
-      }
-      .hero h1 {
-        font-size: 1.8em;
+        font-size: 2em;
       }
       .hero h2 {
         font-size: 1.2em;
+      }
+      .skills-grid {
+        grid-template-columns: 1fr;
       }
     }
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
+    .anchorjs-link {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
-  <nav class="navbar">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
   <div class="container">
-    <div class="hero" id="home">
+    <div class="hero">
       <div class="hero-text">
-        <h1>Hello, I'm Samuel Precious</h1>
-        <h2>Transforming Data into Insights</h2>
-        <p>As a passionate data analyst, I specialize in turning complex data into actionable insights using Excel and Power BI. My work focuses on solving real-world challenges like identifying sales trends, optimizing workflows, and uncovering customer insights. Let’s make your data tell a powerful story!</p>
+        <h1>Hello I'm Samuel Precious</h1>
+        <h2>Your Data Analyst</h2>
+        <p>As a data analyst, I specialize in transforming complex data into clear, actionable insights using Excel and Power BI. My work solves challenges like identifying sales trends, optimizing workflows, and uncovering customer insights. By understanding data’s purpose, I deliver solutions that empower businesses to make informed decisions and drive growth.</p>
       </div>
       <div class="hero-image">
         <img src="images/profile.jpg" alt="Samuel Precious" class="profile-img">
       </div>
     </div>
-    <div class="section" id="skills">
+    <div class="section">
       <h3>Skills</h3>
       <div class="skills-grid">
         <div class="skill">
@@ -369,62 +255,34 @@
         </div>
       </div>
     </div>
-    <div class="section" id="projects">
+    <!-- Updated Portfolio Section -->
+    <div class="section portfolio-section">
       <h3>Projects</h3>
-      <div class="projects-grid">
-        <div class="project">
-          <img src="images/sales-dashboard.jpg" alt="Sales Trends Dashboard">
-          <h4>Sales Trends Dashboard</h4>
-          <p>Analyzed sales data from 2009-2012 to identify trends and forecast performance, helping optimize inventory.</p>
-          <p class="tools"><strong>Tools</strong>: Power BI, Excel</p>
-          <a href="https://www.behance.net/gallery/210978159/Sales-Trends-Dashboard">View Dashboard</a>
-          <a href="https://github.com/your-username/portfolio/raw/main/files/sales-trends.xlsx">Download Excel</a>
-          <button class="btn" onclick="alert('Details: Built an interactive Power BI dashboard to visualize sales trends.')">View Details</button>
+      <div class="grid-container">
+        <div class="project-item">
+          <div class="project-card">
+            <div class="iframe-wrapper">
+              <iframe src="https://www.behance.net/embed/project/210978159?ilo0=1" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+          <h4 class="project-title">Sales Trends Dashboard</h4>
         </div>
-        <div class="project">
-          <img src="images/customer-behavior.jpg" alt="Customer Behavior Analysis">
-          <h4>Customer Behavior Analysis</h4>
-          <p>Segmented customers by purchase history to guide targeted marketing strategies, boosting engagement.</p>
-          <p class="tools"><strong>Tools</strong>: Excel, Power BI</p>
-          <a href="https://github.com/your-username/portfolio">View Report</a>
-          <button class="btn" onclick="alert('Details: Used Power BI to segment customers and improve marketing ROI.')">View Details</button>
-        </div>
-        <div class="project">
-          <img src="images/efficiency-report.jpg" alt="Operational Efficiency Report">
-          <h4>Operational Efficiency Report</h4>
-          <p>Identified workflow bottlenecks to improve efficiency by 10% using detailed data analysis.</p>
-          <p class="tools"><strong>Tools</strong>: Excel</p>
-          <a href="https://github.com/your-username/portfolio/raw/main/files/efficiency-report.xlsx">Download Report</a>
-          <button class="btn" onclick="alert('Details: Conducted in-depth Excel analysis to streamline operations.')">View Details</button>
+        <div class="project-item">
+          <div class="project-card">
+            <div class="iframe-wrapper">
+              <iframe src="https://www.behance.net/embed/project/200511787?ilo0=1" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+          <h4 class="project-title">Customer Behavior Analysis</h4>
         </div>
       </div>
     </div>
-    <div class="section" id="blog">
-      <h3>Blog</h3>
-      <div class="blog-grid">
-        <div class="blog-post">
-          <h4>Creating Impactful Dashboards in Power BI</h4>
-          <p>Learn how to design interactive dashboards that communicate insights effectively.</p>
-          <a href="https://medium.com/@your-username/power-bi-dashboards">Read More</a>
-        </div>
-        <div class="blog-post">
-          <h4>Excel Tips for Data Cleaning</h4>
-          <p>Discover essential Excel techniques for preparing clean and reliable datasets.</p>
-          <a href="https://medium.com/@your-username/excel-data-cleaning">Read More</a>
-        </div>
-      </div>
-    </div>
-    <div class="section" id="contact">
+    <!-- End of Updated Portfolio Section -->
+    <div class="section">
       <h3>Contact</h3>
       <p>Ready to make your data work harder? Let’s connect!</p>
-      <div class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="button" onclick="alert('Thank you for your message! I’ll get back to you soon.')">Send Message</button>
-      </div>
       <p><strong>Email</strong>: samuel.precious@example.com</p>
-      <p><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/your-profile">My Profile</a></p>
+      <p><strong>LinkedIn</strong>: <a href="[your-linkedin-profile]">My Profile</a></p>
     </div>
   </div>
 </body>
