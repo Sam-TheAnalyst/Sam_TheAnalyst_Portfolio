@@ -13,11 +13,15 @@
       font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
     .container {
       max-width: 1000px;
       margin: 0 auto;
       padding: 30px 20px;
+      flex: 1 0 auto;
     }
     .hero {
       display: flex;
@@ -297,6 +301,31 @@
     .social-icons a:hover {
       color: #00a899;
     }
+    /* Footer Styles */
+    footer {
+      background: #1A1A1A;
+      padding: 20px;
+      border-top: 1px solid #00C4B4;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    footer p {
+      margin: 0;
+      color: #bdc3c7;
+      font-size: 0.9em;
+    }
+    footer .footer-social {
+      margin-top: 10px;
+    }
+    footer .footer-social a {
+      color: #00C4B4;
+      margin: 0 10px;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+    footer .footer-social a:hover {
+      color: #00a899;
+    }
     @media (max-width: 768px) {
       .contact-content {
         flex-direction: column;
@@ -311,14 +340,6 @@
         flex: none;
         width: 100%;
       }
-    }
-    /* End of Contact Section Styles */
-    p, li {
-      line-height: 1.6;
-      font-size: 1.1em;
-      color: #bdc3c7;
-    }
-    @media (max-width: 768px) {
       .hero {
         flex-direction: column;
       }
@@ -485,5 +506,14 @@
       </div>
     </div>
   </div>
+  <footer>
+    <p>© 2025 Samuel Precious. All rights reserved. | Contact: samuel.precious@example.com</p>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </footer>
 </body>
 </html>
