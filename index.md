@@ -67,7 +67,7 @@
       border-bottom: none;
     }
     .hero p {
-      color: #bd c3c7;
+      color: #bdc3c7;
       font-size: 1.1em;
       line-height: 1.6;
       margin: 10px 0;
@@ -170,7 +170,120 @@
         grid-template-columns: 1fr;
       }
     }
-    /* End of Portfolio Section Styles */
+    /* Contact Section Styles */
+    .contact-section {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .contact-form {
+      flex: 2;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    .contact-form::before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 50px;
+      background: #00C4B4;
+    }
+    .contact-info {
+      flex: 1;
+      background: #333;
+      color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    .contact-info::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      background: #00C4B4;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      color: black;
+    }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 10px 0;
+      border: none;
+      border-bottom: 1px solid black;
+      background: transparent;
+      color: black;
+      font-size: 1em;
+    }
+    .form-group textarea {
+      height: 100px;
+    }
+    .btn-submit {
+      background: #00C4B4;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: opacity 0.3s ease;
+    }
+    .btn-submit:hover {
+      opacity: 0.8;
+    }
+    .contact-list {
+      list-style: none;
+      padding: 0;
+    }
+    .contact-list li {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+    .contact-list i {
+      margin-right: 10px;
+      color: #00C4B4;
+    }
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+      .contact-form, .contact-info {
+        flex: none;
+        width: 100%;
+      }
+      .contact-form::before {
+        left: 50%;
+        top: -10px;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 5px;
+      }
+      .contact-info::before {
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    /* End of Contact Section Styles */
     p, li {
       line-height: 1.6;
       font-size: 1.1em;
@@ -259,7 +372,6 @@
         </div>
       </div>
     </div>
-    <!-- Updated Portfolio Section with Five Projects -->
     <div class="section portfolio-section">
       <h3>Projects</h3>
       <div class="grid-container">
@@ -305,12 +417,40 @@
         </div>
       </div>
     </div>
-    <!-- End of Updated Portfolio Section -->
-    <div class="section">
+    <div class="section contact-section">
       <h3>Contact</h3>
-      <p>Ready to make your data work harder? Let’s connect!</p>
-      <p><strong>Email</strong>: samuel.precious@example.com</p>
-      <p><strong>LinkedIn</strong>: <a href="[your-linkedin-profile]">My Profile</a></p>
+      <div class="contact-content">
+        <div class="contact-form">
+          <img src="images/logo.png" alt="Logo" class="logo" style="max-width: 50px; margin-bottom: 20px;">
+          <h3 style="color: black; margin-bottom: 10px;">Contact Us</h3>
+          <p style="color: black; font-size: 0.9em; text-transform: uppercase; margin-bottom: 20px;">Feel free to contact us any time. We will get back to you as soon as we can!</p>
+          <form action="[your-formspree-endpoint]" method="POST">
+            <div class="form-group">
+              <label for="name">NAME</label>
+              <input type="text" id="name" name="name" placeholder="NAME" required>
+            </div>
+            <div class="form-group">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" placeholder="EMAIL" required>
+            </div>
+            <div class="form-group">
+              <label for="message">MESSAGE</label>
+              <textarea id="message" name="message" placeholder="MESSAGE" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">SEND</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3 style="color: white; margin-bottom: 20px;">INFO</h3>
+          <ul class="contact-list">
+            <li><i class="fas fa-envelope"></i> samuel.precious@example.com</li>
+            <li><i class="fas fa-phone"></i> +123 456 7890</li>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Data Lane, Insight City</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri, 9:00 AM - 5:00 PM</li>
+            <li><i class="fab fa-linkedin"></i> <a href="[your-linkedin-profile]" style="color: #00C4B4; text-decoration: none;">My Profile</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </body>
